@@ -1,0 +1,123 @@
+<view>
+    <view class="xi"></view>
+    <view class="container">
+        <!-- 签到 -->
+        <view class="nav-icon">
+            <image src="/images/qiandao.png" class="icon" style="width:65rpx;height:65rpx"></image>
+            <image src="/images/chat.png" class="icon"></image>
+        </view>
+        <!-- 注册 -->
+        <view class="login">
+            <view>
+                <image src="https://img1.baidu.com/it/u=1619850096,902833269&fm=253&fmt=auto&app=120&f=JPEG?w=500&h=500"></image>
+            </view>
+            <view>注册/登录</view>
+        </view>
+        <!-- 我的关注 -->
+        <view class="mycare">
+            <view>
+                <view>0</view>
+                <view>我的关注</view>
+            </view>
+            <view>
+                <view>0</view>
+                <view>我的收藏</view>
+            </view>
+            <view>
+                <view>0</view>
+                <view>医生卡</view>
+            </view>
+            <view>
+                <view>0</view>
+                <view>优惠券</view>
+            </view>
+        </view>
+        <!-- 会员 -->
+        <view class="vip">
+            <image src="https://img1.baidu.com/it/u=2599308792,3431344249&fm=15&fmt=auto"></image>
+        </view>
+        <!-- 订单 -->
+        <view class="order">
+            <view>
+                <view>
+                    <image src="/images/wodewenzhen.png"></image>
+                </view>
+                <view>我的问诊</view>
+            </view>
+            <view>
+                <view>
+                    <image src="/images/wodechufang.png"></image>
+                </view>
+                <view>我的处方</view>
+            </view>
+            <view>
+                <view>
+                    <image src="/images/yaopindingdan.png"></image>
+                </view>
+                <view>药品订单</view>
+            </view>
+            <view>
+                <view>
+                    <image src="/images/yimiaodingdan.png"></image>
+                </view>
+                <view>疫苗订单</view>
+            </view>
+            <view>
+                <view>
+                    <image src="/images/yishijiangtang.png"></image>
+                </view>
+                <view>医师讲堂</view>
+            </view>
+        </view>
+        <!-- 轮播图 -->
+        <swiper class="swiper" autoplay="true" circular="true" indicator-dots="true" indicator-color="rgba(255,255,255,.3)" indicator-active-color="#fff">
+            <swiper-item>
+                <image src="https://img1.baidu.com/it/u=1446258764,2210955415&fm=26&fmt=auto"></image>
+            </swiper-item>
+            <swiper-item>
+                <image src="https://img2.baidu.com/it/u=3871111496,4108625048&fm=26&fmt=auto"></image>
+            </swiper-item>
+            <swiper-item>
+                <image src="https://img0.baidu.com/it/u=2103097298,561692624&fm=26&fmt=auto"></image>
+            </swiper-item>
+        </swiper>
+        <!-- 信息栏 -->
+        <view class="info">
+            <view>
+                <image src="/images/dingxiangdou.png"></image>
+                <text style="font-size: 32rpx;">丁香豆</text>
+                <image class="more" src="/images/arrowmore.png"></image>
+            </view>
+            <view>
+                <image src="/images/chengzhangceping.png"></image>
+                <text>成长测评</text>
+                <image class="more" src="/images/arrowmore.png"></image>
+            </view>
+            <view>
+                <image src="/images/huanzhexinxi.png"></image>
+                <text>患者信息</text>
+                <image class="more" src="/images/arrowmore.png"></image>
+            </view>
+            <view>
+                <image src="/images/yuyuerenxinxi.png"></image>
+                <text>预约人信息</text>
+                <image class="more" src="/images/arrowmore.png"></image>
+            </view>
+            <view>
+                <image src="/images/yaohaoxinxi.png"></image>
+                <text>摇号信息</text>
+                <image class="more" src="/images/arrowmore.png"></image>
+            </view>
+            <view>
+                <image src="/images/shezhi.png"></image>
+                <text>设置</text>
+                <image class="more" src="/images/arrowmore.png"></image>
+            </view>
+            <view>
+                <image src="/images/zaixiankefu.png"></image>
+                <text>在线客服</text>
+                <image class="more" src="/images/arrowmore.png"></image>
+            </view>
+        </view>
+    </view>
+</view>

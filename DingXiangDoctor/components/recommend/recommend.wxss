@@ -1,0 +1,65 @@
+.recomment-container{
+    box-sizing: border-box;
+    padding: 20rpx;
+}
+.swiper{
+    height: 200rpx;
+}
+.lunbo{
+    width: 100%;
+    border-radius: 20rpx;
+    height:200rpx;
+}
+.item {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40rpx 20rpx;
+    background-color: #fff;
+    border-bottom: 3rpx solid #F6F6F6 ;
+}
+rich-text {
+    display: inline-block;
+}
+.all{
+  float: right;
+  font-size:32rpx;
+  margin-top:100rpx;
+}
+.article{
+    color:#333;font-size: 26rpx;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-break: break-all; /* 追加这一行代码 */
+}
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.avatar_small>image {
+    width: 80rpx;
+    height: 80rpx;
+    border: 2rpx solid #F6F6F6;
+    border-radius: 50%;
+}
+
+.name {
+    width: 68%
+}
+
+.free-btn {
+    margin-top: 20rpx;
+    background-color: #e9e6fc;
+    display: inline-block;
+    color: #8a76fc;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    border-radius: 30rpx;
+    font-size: 24rpx;
+    font-weight: bold;
+    line-height: 48rpx;
+    height:52rpx
+}

@@ -1,0 +1,52 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/find/find",
+    "pages/server/server",
+    "pages/my/my",
+    "pages/logs/logs",
+    "pages/baike/baike",
+    "pages/remen/remen"
+  ],
+  "window":{
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true,
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "selectedColor": "#8a76fc",
+    "list":[
+      {
+        "selectedIconPath": "/images/index_se.png",
+        "iconPath": "/images/index.png",
+        "pagePath": "pages/index/index",
+        "text":"首页"
+      },
+      {
+        "selectedIconPath": "/images/find_se.png",
+        "iconPath": "/images/find.png",
+        "pagePath": "pages/find/find",
+        "text":"发现"
+      },
+      {
+        "selectedIconPath": "/images/server_se.png",
+        "iconPath": "/images/server.png",
+        "pagePath": "pages/server/server",
+        "text":"健康服务"
+      },
+      {
+        "selectedIconPath": "/images/my_se.png",
+        "iconPath": "/images/my.png",
+        "pagePath": "pages/my/my",
+        "text":"我的"
+      }
+    ]
+  },
+
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

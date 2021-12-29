@@ -1,0 +1,151 @@
+<view>
+    <view style="height:{{(navigationBarHeight+statusBarHeight)*2+'rpx'}};width:100%;" class="back-con">
+        <view class='back' style="height:{{menuButtonHeight*2+'rpx'}};line-height:{{menuButtonHeight*2+'rpx'}} ;width:{{menuButtonWidth*2+'rpx'}};top:{{top*2+'rpx'}};left:{{left*2+'rpx'}}">
+            <view bindtap="backIndex" style="top:{{top*2+'rpx'}};line-height:{{menuButtonHeight*2+'rpx'}};position: absolute;left:{{left*2+'rpx'}}">
+                <image src="/images/leftqrrow.png"></image>
+            </view>
+        </view>
+        <!-- 标题 -->
+        <view style="top:{{top*2+'rpx'}};line-height:{{menuButtonHeight*2+'rpx'}};left:50%;transform:translateX(-50%) ;font-size: 30rpx;color:#fff">{{title}}</view>
+    </view>
+    <view class="nav-bg" style="height:{{(navigationBarHeight+statusBarHeight)*2+'rpx'}};width:100%;">
+        <image src="https://img0.baidu.com/it/u=3443553519,52977298&fm=253&fmt=auto&app=120&f=PNG?w=384&h=214"></image>
+    </view>
+    <view>
+        <image class="bg" src="https://img0.baidu.com/it/u=3443553519,52977298&fm=253&fmt=auto&app=120&f=PNG?w=384&h=214"></image>
+        <view class="content">
+            <view class="item">
+                <view>
+                    <image src="/images/num1.png"></image>
+                </view>
+                <view>
+                    <view style="font-size: 32rpx;">还有谁没穿秋裤</view>
+                    <view style="font-size: 22rpx;color:#666">冬天也太冷了吧,你开始穿秋裤了吗</view>
+                    <view style="font-size: 20rpx;color:#888">14个内容 4556次浏览</view>
+                </view>
+                <view><image src="/images/arrowmore.png"></image></view>
+            </view>
+            <view class="item">
+                <view>
+                    <image src="/images/num2.png"></image>
+                </view>
+                <view>
+                    <view style="font-size: 32rpx;">还有谁没穿秋裤</view>
+                    <view style="font-size: 22rpx;color:#666">冬天也太冷了吧,你开始穿秋裤了吗</view>
+                    <view style="font-size: 20rpx;color:#888">14个内容 4556次浏览</view>
+                </view>
+                <view><image src="/images/arrowmore.png"></image></view>
+            </view>
+            <view class="item">
+                <view>
+                    <image src="/images/num3.png"></image>
+                </view>
+                <view>
+                    <view style="font-size: 32rpx;">还有谁没穿秋裤</view>
+                    <view style="font-size: 22rpx;color:#666">冬天也太冷了吧,你开始穿秋裤了吗</view>
+                    <view style="font-size: 20rpx;color:#888">14个内容 4556次浏览</view>
+                </view>
+                <view><image src="/images/arrowmore.png"></image></view>
+            </view>
+            <view class="item">
+                <view>
+                    <view>4</view>
+                </view>
+                <view>
+                    <view style="font-size: 32rpx;">还有谁没穿秋裤</view>
+                    <view style="font-size: 22rpx;color:#666">冬天也太冷了吧,你开始穿秋裤了吗</view>
+                    <view style="font-size: 20rpx;color:#888">14个内容 4556次浏览</view>
+                </view>
+                <view><image src="/images/arrowmore.png"></image></view>
+            </view>
+            <view class="item">
+                <view>
+                    <view>5</view>
+                </view>
+                <view>
+                    <view style="font-size: 32rpx;">还有谁没穿秋裤</view>
+                    <view style="font-size: 22rpx;color:#666">冬天也太冷了吧,你开始穿秋裤了吗</view>
+                    <view style="font-size: 20rpx;color:#888">14个内容 4556次浏览</view>
+                </view>
+                <view><image src="/images/arrowmore.png"></image></view>
+            </view>
+            <view class="item">
+                <view>
+                    <view>6</view>
+                </view>
+                <view>
+                    <view style="font-size: 32rpx;">还有谁没穿秋裤</view>
+                    <view style="font-size: 22rpx;color:#666">冬天也太冷了吧,你开始穿秋裤了吗</view>
+                    <view style="font-size: 20rpx;color:#888">14个内容 4556次浏览</view>
+                </view>
+                <view><image src="/images/arrowmore.png"></image></view>
+            </view>
+            <view class="item">
+                <view>
+                    <view>7</view>
+                </view>
+                <view>
+                    <view style="font-size: 32rpx;">还有谁没穿秋裤</view>
+                    <view style="font-size: 22rpx;color:#666">冬天也太冷了吧,你开始穿秋裤了吗</view>
+                    <view style="font-size: 20rpx;color:#888">14个内容 4556次浏览</view>
+                </view>
+                <view><image src="/images/arrowmore.png"></image></view>
+            </view>
+            <view class="item">
+                <view>
+                    <view>8</view>
+                </view>
+                <view>
+                    <view style="font-size: 32rpx;">还有谁没穿秋裤</view>
+                    <view style="font-size: 22rpx;color:#666">冬天也太冷了吧,你开始穿秋裤了吗</view>
+                    <view style="font-size: 20rpx;color:#888">14个内容 4556次浏览</view>
+                </view>
+                <view><image src="/images/arrowmore.png"></image></view>
+            </view>
+            <view class="item">
+                <view>
+                    <view>9</view>
+                </view>
+                <view>
+                    <view style="font-size: 32rpx;">还有谁没穿秋裤</view>
+                    <view style="font-size: 22rpx;color:#666">冬天也太冷了吧,你开始穿秋裤了吗</view>
+                    <view style="font-size: 20rpx;color:#888">14个内容 4556次浏览</view>
+                </view>
+                <view><image src="/images/arrowmore.png"></image></view>
+            </view>
+            <view class="item">
+                <view>
+                    <view>10</view>
+                </view>
+                <view>
+                    <view style="font-size: 32rpx;">还有谁没穿秋裤</view>
+                    <view style="font-size: 22rpx;color:#666">冬天也太冷了吧,你开始穿秋裤了吗</view>
+                    <view style="font-size: 20rpx;color:#888">14个内容 4556次浏览</view>
+                </view>
+                <view><image src="/images/arrowmore.png"></image></view>
+            </view>
+            <view class="item">
+                <view>
+                    <view>11</view>
+                </view>
+                <view>
+                    <view style="font-size: 32rpx;">还有谁没穿秋裤</view>
+                    <view style="font-size: 22rpx;color:#666">冬天也太冷了吧,你开始穿秋裤了吗</view>
+                    <view style="font-size: 20rpx;color:#888">14个内容 4556次浏览</view>
+                </view>
+                <view><image src="/images/arrowmore.png"></image></view>
+            </view>
+            <view class="item">
+                <view>
+                    <view>12</view>
+                </view>
+                <view>
+                    <view style="font-size: 32rpx;">还有谁没穿秋裤</view>
+                    <view style="font-size: 22rpx;color:#666">冬天也太冷了吧,你开始穿秋裤了吗</view>
+                    <view style="font-size: 20rpx;color:#888">14个内容 4556次浏览</view>
+                </view>
+                <view><image src="/images/arrowmore.png"></image></view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,157 @@
+<view class='page'>
+    <view class="header1">
+        <view>健康服务</view>
+    </view>
+    <view class="header-desc">
+        <view style="color:#ff9500">放心问</view>
+        <view>|</view>
+        <view>ⓥ海量三甲医生</view>
+        <view>·</view>
+        <view>ⓥ3000万用户好评</view>
+        <view>
+            <image src="/images/arrowmore.png" style="height:18rpx;width:18rpx;vertical-align: top;margin-top: 6rpx;"></image>
+        </view>
+    </view>
+    <view class="container">
+        <view class="mask" wx:if="{{showMenu}}" style="height:{{pageHeight*2+'rpx'}}"></view>
+        <!-- 三大导航框 -->
+        <view class="nav1">
+            <view>
+                <view>
+                    <image src="/images/1yuanyizhen.png" style="width:90rpx;height:90rpx "></image>
+                </view>
+                <view style="font-size:28rpx;font-weight: bold;">特惠义诊</view>
+                <view style="font-size: 22rpx; color:#888;margin-top:10rpx ;">1元问医生</view>
+            </view>
+            <view>
+                <view>
+                    <image src="/images/jisuwenzhen.png" style="width:90rpx;height:90rpx "></image>
+                </view>
+                <view style="font-size:28rpx;font-weight: bold;">急速问诊</view>
+                <view style="font-size: 22rpx; color:#888;margin-top:10rpx ;">3分钟快速回复</view>
+            </view>
+            <view>
+                <view>
+                    <image src="/images/wenyisheng.png" style="width:90rpx;height:90rpx "></image>
+                </view>
+                <view style="font-size:28rpx;font-weight: bold;">名医问诊</view>
+                <view style="font-size: 22rpx; color:#888;margin-top:10rpx ;">全国三甲名医</view>
+            </view>
+        </view>
+        <!-- 五个小导航框 -->
+        <view class="nav2">
+            <view>
+                <view>
+                    <image src="/images/yimiaoyuyue_pu.png" style="width: 60rpx;height:60rpx"></image>
+                </view>
+                <view style="font-size: 12px;margin-top: 5rpx;">疫苗预约</view>
+            </view>
+            <view>
+                <view>
+                    <image src="/images/zhuanjiayizhen_pu.png" style="width: 60rpx;height:60rpx"></image>
+                </view>
+                <view style="font-size: 24rpx;margin-top: 5rpx;">专家义诊</view>
+            </view>
+            <view>
+                <view>
+                    <image src="/images/yuyuedianhua_pu.png" style="width: 60rpx;height:60rpx"></image>
+                </view>
+                <view style="font-size: 24rpx;margin-top: 5rpx;">预约电话</view>
+            </view>
+            <view>
+                <view>
+                    <image src="/images/dianhuajizhen_pu.png" style="width: 80rpx;height:60rpx"></image>
+                </view>
+                <view style="font-size: 24rpx;margin-top: 5rpx;">电话急诊</view>
+            </view>
+            <view>
+                <view>
+                    <image src="/images/erkehuiyuan_pu.png" style="width: 60rpx;height:60rpx"></image>
+                </view>
+                <view style="font-size: 24rpx;margin-top: 5rpx;">儿科会员</view>
+            </view>
+        </view>
+        <!-- 轮播图 -->
+        <swiper class="swiper" autoplay="true" circular="true">
+            <swiper-item>
+                <image src="https://img1.baidu.com/it/u=1446258764,2210955415&fm=26&fmt=auto"></image>
+            </swiper-item>
+            <swiper-item>
+                <image src="https://img2.baidu.com/it/u=3871111496,4108625048&fm=26&fmt=auto"></image>
+            </swiper-item>
+            <swiper-item>
+                <image src="https://img0.baidu.com/it/u=2103097298,561692624&fm=26&fmt=auto"></image>
+            </swiper-item>
+        </swiper>
+        <!-- 推荐医生 -->
+        <block>
+            <view class="header">
+                <view>推荐医生</view>
+                <view>为您提供一站式医疗服务<image src="/images/arrowmore.png"></image>
+                </view>
+            </view>
+            <!-- 导航 -->
+            <view class="nav-bar">
+                <scroll-view scroll-x="true" class="scroll">
+                    <view class="scroll-item {{current==index?'selected':''}}" wx:for="{{classes}}" wx:key="index" data-current="{{index}}" bindtap="changeBar">{{item}}</view>
+                </scroll-view>
+                <!-- 更多 -->
+                <view class="more" bindtap="showMore">
+                    <image src="/images/sigefangkuai.png"></image>
+                </view>
+            </view>
+            <!-- 选项卡内容 -->
+            <swiper bindchange="swiper" current="{{current}}" style="height:{{heights[current]*2+'rpx'}}">
+                <swiper-item wx:for="{{classes}}" wx:key="index">
+                    <view class="current-item">
+                       <view class="item" wx:for="{{10}}" wx:key="index">
+                        <!-- 头像 -->
+                        <view class="avatar">
+                            <image src="https://img1.dxycdn.com/2020/1206/955/9127139489696751543-22.jpg!wh200"></image>
+                        </view>
+                        <!-- 介绍信息 -->
+                        <view class="info">
+                            <view class="name">
+                                <view style="font-size: 32rpx;">黄静娴</view>
+                                <view style="font-size: 28rpx;color:#555">主治医师</view>
+                                <view class="kaichufang">可开处方</view>
+                                <view class="sanjia">三甲</view>
+                            </view>
+                            <view class="address">
+                                <view>菏泽市立医院</view>
+                                <view>小儿外科</view>
+                            </view>
+                            <view class="intr">专注于宝宝成长发育，擅长小儿腹泻，黄疸，发热，呼吸道感染，婴儿湿疹，疫苗接种，辅食添加，婴儿睡眠，早产儿生长发育评估。</view>
+                            <view class="biaoxian">
+                                <view>
+                                    <image src="/images/star.png"></image>4.95
+                                </view>
+                                <view><text>月回答</text>270</view>
+                                <view><text>平均响应</text>9分钟内</view>
+                            </view>
+                            <!-- 价格 -->
+                            <view class="price">
+                            <view>图文¥29</view>
+                            <view>问医生</view>
+                            </view>
+                        </view>
+                       </view>
+                    </view>
+                </swiper-item>
+            </swiper>
+            <view class="moreMenu" wx:if="{{showMenu}}">
+                <view>
+                    <view class="click">
+                        <view>请选择</view>
+                        <view bindtap="hideMenu">
+                            <image src="/images/arrowup.png"></image>
+                        </view>
+                    </view>
+                    <view class="menu" bindtap="selectClass">
+                        <view wx:for="{{classes}}" wx:key="index" class="{{current==index?'selected':''}}" data-id="{{index}}">{{item}}</view>
+                    </view>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>

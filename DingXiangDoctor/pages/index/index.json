@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "mycare":"/components/care/care",
+    "recommend":"/components/recommend/recommend"
+  }
+}

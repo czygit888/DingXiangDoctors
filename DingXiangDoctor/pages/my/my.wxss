@@ -1,0 +1,124 @@
+.xi {
+    width: 100%;
+    height: 170rpx;
+    position: sticky;
+    display: flex;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 100;
+    box-sizing: border-box;
+    padding: 20rpx;
+}
+
+.container {
+    box-sizing: border-box;
+    padding: 0 20rpx;
+}
+
+.nav-icon {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-icon image {
+    width: 55rpx;
+    height: 55rpx;
+    margin-left: 10rpx
+}
+.login{
+    height: 110rpx;
+}
+.login image{
+    width:120rpx;
+    height:120rpx;
+    border-radius: 50%;
+    vertical-align: middle;
+    border:4rpx solid #eee
+}
+.login>view{
+    float: left;
+}
+.login>view:last-child{
+    margin-left:30rpx;
+    font-size:44rpx;
+    line-height: 110rpx;
+}
+.mycare{
+    margin-top: 40rpx;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.mycare>view>view:first-child{
+    font-size: 28rpx;
+    font-weight: bold;
+}
+.mycare>view>view:last-child{
+    font-size: 22rpx;
+    margin-top: 10rpx;
+    color:#888;
+}
+.vip{
+    margin:40rpx 0 ;
+}
+.vip image{
+    width: 100%;
+    height:80rpx;
+    border-radius: 40rpx;
+}
+.order{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 24rpx;
+}
+.order image{
+    width:60rpx;
+    height:60rpx;
+}
+.order view{
+    text-align: center;
+}
+.swiper{
+    margin: 30rpx 0;
+    height: 120rpx;
+}
+.swiper image{
+    width:100%;
+    height: 120rpx;
+    border-radius: 20rpx;
+}
+/* 修改dot形状 */
+.wx-swiper-dots .wx-swiper-dot{
+    width: 40rpx;    /*宽*/
+    height: 5rpx;   /*高*/
+    border-radius: 4rpx;  /*圆角*/
+}
+.wx-swiper-dots.wx-swiper-dots-horizontal{
+    bottom: 10rpx;
+  }
+  .info>view{
+      box-sizing: border-box;
+      padding:40rpx 0;
+      position: relative;
+      font-size: 28rpx;
+  }
+  .info image{
+      width: 50rpx;
+      height: 50rpx;
+      vertical-align: middle;
+      margin-right: 10rpx;
+  }
+  .info>view image.more{
+    margin-right: 0;
+    width: 35rpx;
+    height: 35rpx;
+      position: absolute;
+      right:0;
+      top:40rpx
+  }

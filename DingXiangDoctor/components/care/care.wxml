@@ -1,0 +1,51 @@
+<view>
+    <view class="care_container">
+    <!-- 第一个滚动条 -->
+    <view class="scroll_container">
+        <view class="title">
+            <view style="font-size: 24rpx;">推荐关注</view>
+            <view style="font-size: 20rpx;color:#888">查看更多 <block>
+                    <image src="/images/arrowmore.png" mode="aspectFit" class="arrowmore"></image>
+                </block>
+            </view>
+        </view>
+        <scroll-view scroll-x="true" style="width: 100%;white-space: nowrap;display:flex;margin-top: 20rpx;">
+            <view class="scroll-item" wx:for="{{20}}" wx:key="index">
+                <view style="width:180rpx;text-align: center;position: relative;">
+                    <view>
+                        <image src="https://img1.dxycdn.com/2020/0215/939/3396794107938081468-22.jpg!wh200" class="avatar"></image>
+                        <image class="vip" src="/images/VIP.png"></image>
+                    </view>
+                    <view style="font-size: 24rpx;margin: 10rpx 0;">魏瑞玲</view>
+                    <view style="white-space: normal;font-size: 20rpx;color:#888">河南省直第三人民医院 皮肤科</view>
+                    <view class="full-btn">
+                        <view style="font-weight:900;font-size:30rpx;margin-right:10rpx;display: inline-block;">+</view>关注
+                    </view>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>
+<!-- 视频话题 -->
+<view class="item" wx:for="{{10}}" wx:key="index">
+    <view class="info">
+        <view class="avatar_small">
+            <image src="https://img1.dxycdn.com/2020/0215/939/3396794107938081468-22.jpg!wh200"></image>
+        </view>
+        <view class="name">
+            <view style="font-size: 28rpx;">魏瑞玲<image src="/images/VIP.png" style="width:30rpx;height:30rpx;vertical-align: middle;"></image></view>
+            <view style="white-space: nowrap;font-size: 20rpx;color:#888;margin-top: 8rpx;overflow:hidden;text-overflow: ellipsis;">河南省直第三人民医院 皮肤科</view>
+        </view>
+        <view class="free-btn">
+            <view style="font-weight:900;font-size:30rpx;margin-right:10rpx;display: inline-block;">+</view>关注
+        </view>
+    </view>
+    <view style="font-size:30rpx;margin: 20rpx 0;">脑梗做支架后会复发吗?</view>
+    <view style="color:#8a76fc;font-size:20rpx;margin:10rpx 0;">#医生大实话</view>
+    <view style="color:#888;font-size: 26rpx;">脑梗做支架后会复发吗?</view>
+    <view class="video">
+  <image src="/images/play.png" class="play"></image>
+        <view class="time">00:44</view>
+    </view>
+</view>
+</view>

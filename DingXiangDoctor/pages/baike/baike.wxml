@@ -1,0 +1,211 @@
+<view>
+    <!-- 返回首页胶囊 -->
+    <view  style="height:{{(navigationBarHeight+statusBarHeight)*2+'rpx'}};width:100%;" class="back-con" wx:if="{{isDown}}">
+        <view class='back' style="height:{{menuButtonHeight*2+'rpx'}};line-height:{{menuButtonHeight*2+'rpx'}} ;width:{{menuButtonWidth*2+'rpx'}};top:{{top*2+'rpx'}};left:{{left*2+'rpx'}}" >
+            <view bindtap="backIndex">
+                <image src="/images/leftqrrow.png"></image>
+            </view>
+            <view style="color:rgba(0,0,0,.05)">|</view>
+            <view bindtap="backRecom">
+                <image src="/images/home.png" n></image>
+            </view>
+        </view>
+        <!-- 标题 -->
+        <view  style="top:{{top*2+'rpx'}};line-height:{{menuButtonHeight*2+'rpx'}};left:50%;transform:translateX(-50%) ;font-size: 30rpx;">丁香医生</view>
+    </view>
+    <!-- 背景 -->
+    <view class="bg">
+        <image src="https://upload.chinaz.com/2021/0929/2021092916060625030.png"></image>
+    </view>
+    <!-- 浮动搜索框 -->
+    <view class="sousuokuang">
+        <view class="input">
+            <image src="/images/search_find.png"></image><text>搜索疾病/症状/药品/问题</text>
+        </view>
+        <view class="search">搜索</view>
+    </view>
+    <view class="container">
+        <!--查疾病 -->
+        <view class="title">
+            <view class="header">
+                <view>查疾病</view>
+                <view>疾病/症状全了解</view>
+            </view>
+            <view style="font-size: 24rpx;color:#888">查看更多
+                <image src="/images/arrowmore.png" style="width: 20rpx;height: 20rpx;vertical-align: middle;"></image>
+            </view>
+        </view>
+        <view class="jibing-con">
+            <view>
+                <image src="/images/wodewenzhen.png" style="width:50rpx;height:50rpx;"></image>
+                <view style="margin-top:8rpx;font-size: 24rpx;font-weight: bold;">痔疮</view>
+            </view>
+            <view>
+                <image src="/images/wodewenzhen.png" style="width:50rpx;height:50rpx;"></image>
+                <view style="margin-top:8rpx;font-size: 24rpx;font-weight: bold;">痔疮</view>
+            </view>
+            <view>
+                <image src="/images/wodewenzhen.png" style="width:50rpx;height:50rpx;"></image>
+                <view style="margin-top:8rpx;font-size: 24rpx;font-weight: bold;">痔疮</view>
+            </view>
+            <view>
+                <image src="/images/wodewenzhen.png" style="width:50rpx;height:50rpx;"></image>
+                <view style="margin-top:8rpx;font-size: 24rpx;font-weight: bold;">痔疮</view>
+            </view>
+            <view>
+                <image src="/images/wodewenzhen.png" style="width:50rpx;height:50rpx;"></image>
+                <view style="margin-top:8rpx;font-size: 24rpx;font-weight: bold;">痔疮</view>
+            </view>
+            <view>
+                <image src="/images/wodewenzhen.png" style="width:50rpx;height:50rpx;"></image>
+                <view style="margin-top:8rpx;font-size: 24rpx;font-weight: bold;">痔疮</view>
+            </view>
+            <view>
+                <image src="/images/wodewenzhen.png" style="width:50rpx;height:50rpx;"></image>
+                <view style="margin-top:8rpx;font-size: 24rpx;font-weight: bold;">痔疮</view>
+            </view>
+            <view>
+                <image src="/images/wodewenzhen.png" style="width:50rpx;height:50rpx;"></image>
+                <view style="margin-top:8rpx;font-size: 24rpx;font-weight: bold;">痔疮</view>
+            </view>
+        </view>
+        <!-- 查药品 -->
+        <view class="title">
+            <view class="header">
+                <view>查药品</view>
+                <view>药品说明</view>
+            </view>
+            <view style="font-size: 24rpx;color:#888">查看更多
+                <image src="/images/arrowmore.png" style="width: 20rpx;height: 20rpx;vertical-align: middle;"></image>
+            </view>
+        </view>
+        <view class="yao-con">
+            <view>
+                <view>
+                    <view>新冠疫苗</view>
+                    <view>
+                        <image src="/images/arrowmore.png" style="width: 20rpx;height: 20rpx;vertical-align: middle;"></image>
+                    </view>
+                </view>
+                <view>
+                    <view>新冠疫苗</view>
+                    <view>
+                        <image src="/images/arrowmore.png" style="width: 20rpx;height: 20rpx;vertical-align: middle;"></image>
+                    </view>
+                </view>
+            </view>
+            <view>
+                <view>
+                    <view>新冠疫苗</view>
+                    <view>
+                        <image src="/images/arrowmore.png" style="width: 20rpx;height: 20rpx;vertical-align: middle;"></image>
+                    </view>
+                </view>
+                <view>
+                    <view>新冠疫苗</view>
+                    <view>
+                        <image src="/images/arrowmore.png" style="width: 20rpx;height: 20rpx;vertical-align: middle;"></image>
+                    </view>
+                </view>
+            </view>
+            <view>
+                <view>
+                    <view>新冠疫苗</view>
+                    <view>
+                        <image src="/images/arrowmore.png" style="width: 20rpx;height: 20rpx;vertical-align: middle;"></image>
+                    </view>
+                </view>
+                <view>
+                    <view>新冠疫苗</view>
+                    <view>
+                        <image src="/images/arrowmore.png" style="width: 20rpx;height: 20rpx;vertical-align: middle;"></image>
+                    </view>
+                </view>
+            </view>
+        </view>
+        <!-- 查更多 -->
+        <view class="title">
+            <view class="header">
+                <view>查更多</view>
+                <view></view>
+            </view>
+            <view style="font-size: 24rpx;color:#888">查看更多
+                <image src="/images/arrowmore.png" style="width: 20rpx;height: 20rpx;vertical-align: middle;"></image>
+            </view>
+        </view>
+        <view class="more-con">
+            <view>
+                <view>
+                    <image src="/images/yishijiangtang.png" style="width:54rpx;height:54rpx;vertical-align: middle;"></image>
+                </view>
+                <view>
+                    <view style="font-weight: bold;font-size:28rpx;">查医院</view>
+                    <view style="font-size:24rpx;color:#888">全国医院汇总</view>
+                </view>
+            </view>
+            <view>
+                <view>
+                    <image src="/images/yishijiangtang.png" style="width:54rpx;height:54rpx;vertical-align: middle;"></image>
+                </view>
+                <view>
+                    <view style="font-weight: bold;font-size:28rpx;">查医院</view>
+                    <view style="font-size:24rpx;color:#888">全国医院汇总</view>
+                </view>
+            </view>
+            <view>
+                <view>
+                    <image src="/images/yishijiangtang.png" style="width:54rpx;height:54rpx;vertical-align: middle;"></image>
+                </view>
+                <view>
+                    <view style="font-weight: bold;font-size:28rpx;">查医院</view>
+                    <view style="font-size:24rpx;color:#888">全国医院汇总</view>
+                </view>
+            </view>
+            <view>
+                <view>
+                    <image src="/images/yishijiangtang.png" style="width:54rpx;height:54rpx;vertical-align: middle;"></image>
+                </view>
+                <view>
+                    <view style="font-weight: bold;font-size:28rpx;">查医院</view>
+                    <view style="font-size:24rpx;color:#888">全国医院汇总</view>
+                </view>
+            </view>
+            <view>
+                <view>
+                    <image src="/images/yishijiangtang.png" style="width:54rpx;height:54rpx;vertical-align: middle;"></image>
+                </view>
+                <view>
+                    <view style="font-weight: bold;font-size:28rpx;">查医院</view>
+                    <view style="font-size:24rpx;color:#888">全国医院汇总</view>
+                </view>
+            </view>
+            <view>
+                <view>
+                    <image src="/images/yishijiangtang.png" style="width:54rpx;height:54rpx;vertical-align: middle;"></image>
+                </view>
+                <view>
+                    <view style="font-weight: bold;font-size:28rpx;">查医院</view>
+                    <view style="font-size:24rpx;color:#888">全国医院汇总</view>
+                </view>
+            </view>
+            <view>
+                <view>
+                    <image src="/images/yishijiangtang.png" style="width:54rpx;height:54rpx;vertical-align: middle;"></image>
+                </view>
+                <view>
+                    <view style="font-weight: bold;font-size:28rpx;">查医院</view>
+                    <view style="font-size:24rpx;color:#888">全国医院汇总</view>
+                </view>
+            </view>
+            <view>
+                <view>
+                    <image src="/images/yishijiangtang.png" style="width:54rpx;height:54rpx;vertical-align: middle;"></image>
+                </view>
+                <view>
+                    <view style="font-weight: bold;font-size:28rpx;">查医院</view>
+                    <view style="font-size:24rpx;color:#888">全国医院汇总</view>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

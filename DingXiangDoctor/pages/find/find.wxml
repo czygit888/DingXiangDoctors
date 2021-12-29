@@ -1,0 +1,63 @@
+<block>
+    <view class="container">
+        <!-- 头部 -->
+        <view class="header">发现</view>
+        <!-- 滚动框 -->
+        <view class="gundong">
+            <view>
+                <image mode="aspectFit" style="width:50rpx;height: 50rpx;margin-top: 5rpx;" src="/images/search_find.png"></image>
+            </view>
+            <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="5000">
+                <swiper-item wx:for="{{searchList}}" wx:key="index">
+                    <view style="line-height: 42rpx;height: 100%;">{{item.title}}
+                        <block wx:if="{{item.hot}}">
+                            <image src="/images/hot.png" style="width:40rpx;height: 40rpx;vertical-align: top;"></image>
+                        </block>
+                    </view>
+                </swiper-item>
+            </swiper>
+        </view>
+        <!-- 我的关注 -->
+        <view class="care">
+            <view>我的关注</view>
+            <view>
+                <view>
+                    <view style="font-size: 28rpx;">关注专区</view>
+                    <view style="font-size: 28rpx;">获取更多优质内容~</view>
+                    <view class="full-btn">
+                        去发现
+                    </view>
+                </view>
+                <view>
+                    <image src="/images/click.png" style="width: 170rpx;height:170rpx;vertical-align: middle;"></image>
+                </view>
+            </view>
+        </view>
+        <view style="margin-top: 40rpx;">发现专区</view>
+    </view>
+    <view class="find" wx:for="{{10}}" wx:key="index">
+        <view class="theme">
+            <view class="title">
+                <view>
+                    <image src="/images/faxianzhuanqu.png" style="width: 100rpx;height: 100rpx;"></image>
+                </view>
+                <view style="width: 60%;">
+                    <view>减肥之路</view>
+                    <view style="font-size: 24rpx;color:rgba(255,255,255,.8);margin-top: 10rpx;">6万人关注 1376个内容</view>
+                </view>
+                <view>
+                    <view class="free-btn">
+                        <view style="font-weight:900;font-size:30rpx;margin-right:10rpx;display: inline-block;">+</view>关注
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="content">
+        <view class="con-title"><image src="/images/yinhao.png" style="height: 50rpx;width:50rpx;"></image><text style="font-size: 24rpx;color:#888;margin:10rpx 5rpx;">瘦得洒洒脱脱,胖得明明白白</text></view>
+        <view class="con-con">
+        <view>5种最不靠谱减肥方法,看看你有没有中招?</view>
+        <view><image src="http://iconfont.alicdn.com/t/a2347d34-636b-4416-a2af-6b68e998dfbf.png" ></image></view>
+        </view>
+        </view>
+    </view>
+</block>

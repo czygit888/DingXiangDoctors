@@ -1,0 +1,41 @@
+<view class="recomment-container">
+    <!-- 轮播图 -->
+    <view>
+        <swiper autoplay="true" circular="true" class="swiper">
+            <swiper-item>
+                <image class="lunbo" src="https://img2.baidu.com/it/u=2263787745,88529101&fm=253&fmt=auto&app=138&f=JPEG?w=895&h=500"></image>
+            </swiper-item>
+            <swiper-item>
+                <image class="lunbo" src="https://img1.baidu.com/it/u=2518644864,426266339&fm=26&fmt=auto"></image>
+            </swiper-item>
+            <swiper-item>
+                <image class="lunbo" src="https://img1.baidu.com/it/u=2970728270,662396765&fm=253&fmt=auto&app=120&f=JPEG?w=640&h=258"></image>
+            </swiper-item>
+        </swiper>
+    </view>
+    <!-- 话题 -->
+    <view class="item" wx:for="{{10}}" wx:key="index">
+    <view class="info">
+        <view class="avatar_small">
+            <image src="https://img1.dxycdn.com/2020/0428/356/3410386242763422443-22.jpg!wh200"></image>
+        </view>
+        <view class="name">
+            <view style="font-size: 28rpx;">李锋<image src="/images/VIP.png" style="width:30rpx;height:30rpx;vertical-align: middle;"></image></view>
+            <view style="white-space: nowrap;font-size: 20rpx;color:#888;margin-top: 8rpx;overflow:hidden;text-overflow: ellipsis;">上海交通大学医学院附属新华医院 儿童保健科  副主任医师</view>
+        </view>
+        <view class="free-btn">
+            <view style="font-weight:900;font-size:30rpx;margin-right:10rpx;display: inline-block;">+</view>关注
+        </view>
+    </view>
+    <view style="font-size:30rpx;margin: 20rpx 0;">明明熬夜不可以</view>
+    <view style="color:#8a76fc;font-size:20rpx;margin:10rpx 0;">#不得不熬的夜怎么补救</view>
+    <view >
+        <!-- <text class="all">全文</text> -->
+        <view class="article">
+            <text>有很多一部分人，到了夜里就是不想睡觉，哪怕已经很困了，却偏偏要熬夜，  等困意全无了，才决定睡觉。从心理学的角度上来讲上来讲上来讲上来讲Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque quis ipsam obcaecati ut recusandae veniam nostrum dicta reiciendis eum excepturi ullam aperiam a, eligendi minima praesentium, earum saepe ad alias.</text>
+        </view>
+        
+    </view>
+    
+</view>
+</view>

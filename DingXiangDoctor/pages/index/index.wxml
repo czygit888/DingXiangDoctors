@@ -1,0 +1,108 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 头部 -->
+  <view class="nav-xi fixed">{{navigationBarTitle}}</view>
+  <!-- <view class="nav-xi"></view> -->
+  <view class="nav">
+    <view>
+      <view class="nav-title">丁香医生</view>
+      <view class="nav-desc">丁香医生 更懂健康</view>
+    </view>
+    <view class="nav-icon">
+      <image mode="aspectFit" src="/images/qiandao.png" class="icon"></image>
+      <image mode="aspectFit" src="/images/chat.png" class="icon"></image>
+    </view>
+  </view>
+  <!-- 滚动框 -->
+  <view class="gundong">
+    <view>
+      <image mode="aspectFit" style="width:60rpx;height: 60rpx;margin-top: 5rpx;" src="/images/search_icon.png"></image>
+    </view>
+    <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="5000">
+      <swiper-item wx:for="{{searchList}}" wx:key="index">
+        <view style="line-height: 42rpx;height: 100%;">{{item.title}}
+          <block wx:if="{{item.hot}}">
+            <image src="/images/hot.png" style="width:40rpx;height: 40rpx;vertical-align: top;"></image>
+          </block>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 三个大导航框 -->
+  <view class="nav2">
+    <view bindtap="toBaike" style="margin-top: 6rpx;">
+      <view >
+        <image src="/images/jiankangbaike.png" style="width:90rpx;height:90rpx "></image>
+      </view >
+      <view style="font-size:28rpx" >健康百科</view>
+      <view style="font-size: 22rpx; color:#888;margin-top:10rpx ;">常见病科普</view>
+    </view>
+    <view bindtap="toRemen">
+      <view>
+        <image src="/images/kanremen.png" style="width:90rpx;height:90rpx "></image>
+      </view>
+      <view style="font-size:28rpx">看热门</view>
+      <view style="font-size: 22rpx; color:#888;margin-top:10rpx ;">参与健康话题</view>
+    </view>
+    <view>
+      <view>
+        <image src="/images/wenyisheng.png" style="width:90rpx;height:90rpx "></image>
+      </view>
+      <view style="font-size:28rpx">问医生</view>
+      <view style="font-size: 22rpx; color:#888;margin-top:10rpx ;">问诊咨询</view>
+    </view>
+  </view>
+  <!-- 五个小导航框 -->
+  <view class="nav3">
+    <view>
+      <view>
+        <image src="/images/yimiaoyuyue.png" style="width: 60rpx;height:60rpx"></image>
+      </view>
+      <view style="font-size: 24rpx;margin-top: 5rpx;">疫苗预约</view>
+    </view>
+    <view>
+      <view>
+        <image src="/images/jisuwenzhen.png" style="width: 60rpx;height:60rpx"></image>
+      </view>
+      <view style="font-size: 24rpx;margin-top: 5rpx;">急速问诊</view>
+    </view>
+    <view>
+      <view>
+        <image src="/images/1yuanyizhen.png" style="width: 60rpx;height:60rpx"></image>
+      </view>
+      <view style="font-size: 24rpx;margin-top: 5rpx;">1元义诊</view>
+    </view>
+    <view>
+      <view>
+        <image src="/images/kanzhibo.png" style="width: 60rpx;height:60rpx"></image>
+      </view>
+      <view style="font-size: 24rpx;margin-top: 5rpx;">看直播</view>
+    </view>
+    <view>
+      <view>
+        <image src="/images/fangyichuxing.png" style="width: 60rpx;height:60rpx"></image>
+      </view>
+      <view style="font-size: 24rpx;margin-top: 5rpx;">防疫出行</view>
+    </view>
+  </view>
+  <!-- 下面的导航栏 -->
+  <view style="background-color: #fff;width:100%" class="fixed">
+    <view class="nav-bar" bindtap="selectBar">
+      <view class="{{current==0?'selected':''}}" data-current='0'>关注</view>
+      <view class="{{current==1?'selected':''}}" data-current='1'>推荐</view>
+    </view>
+  </view>
+  <!-- 下面的轮播图 -->
+  <swiper bindchange="swiper" current="{{current}}" style="height:{{height*2+'rpx'}};">
+    <swiper-item >
+       <view class="care">
+        <mycare></mycare>
+       </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="recomment">
+        <recommend></recommend>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

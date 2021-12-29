@@ -1,0 +1,120 @@
+.care_container {
+    background-color: #F6F6F6;
+    box-sizing: border-box;
+    padding: 20rpx 20rpx;
+    height:100%;
+}
+
+.scroll_container {
+    width: 100%;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrowmore {
+    width: 20rpx;
+    height: 20rpx;
+    vertical-align: middle;
+}
+
+.scroll-item {
+    height: 340rpx;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20rpx;
+    background-color: #fff;
+    margin-right: 25rpx;
+    border-radius: 20rpx;
+}
+
+.avatar {
+    width: 120rpx;
+    height: 120rpx;
+    border: 2rpx solid #F6F6F6;
+    border-radius: 50%;
+
+}
+
+.vip {
+    position: absolute;
+    width: 35rpx;
+    height: 35rpx;
+    top: 80rpx;
+    right: 28rpx;
+}
+
+.full-btn {
+    margin-top: 20rpx;
+    background-color: #8a76fc;
+    display: inline-block;
+    color: #fff;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    border-radius: 30rpx;
+    font-size: 24rpx;
+    font-weight: bold;
+    line-height: 48rpx;
+}
+
+.item {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40rpx 20rpx;
+    background-color: #fff;
+    border-bottom: 3rpx solid #F6F6F6 ;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.avatar_small>image {
+    width: 80rpx;
+    height: 80rpx;
+    border: 2rpx solid #F6F6F6;
+    border-radius: 50%;
+}
+
+.name {
+    width: 68%
+}
+
+.free-btn {
+    margin-top: 20rpx;
+    background-color: #e9e6fc;
+    display: inline-block;
+    color: #8a76fc;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    border-radius: 30rpx;
+    font-size: 24rpx;
+    font-weight: bold;
+    line-height: 48rpx;
+    height:52rpx
+}
+.video{
+    margin-top:20rpx;
+    background:url(https://img1.dxycdn.com/2018/1106/908/3310287640473172196-22.jpg!wh200) no-repeat;
+    width: 100%;
+    height: 400rpx;
+    background-size: 100% 90%;
+    position: relative;
+}
+.play{
+    width:60rpx;
+    height:60rpx;
+    position: absolute;
+    bottom:60rpx;right:20rpx
+}
+.time{
+    color:#fff;
+    font-size: 20rpx;
+    position: absolute;
+    bottom:60rpx;
+    left:20rpx
+}
